@@ -78,8 +78,8 @@ def genframe():
                             longitud2 = math.hypot(x4 - x3, y4 - y3)
 
                             cv2.putText(frame, f'Parpadeos: {int(conteo)}', (30, 60), cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 255, 0), 2)
-                            cv2.putText(frame, f'Micro Suenos: {int(conteo_sueños)}', (380, 60), cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 0, 255), 2)
-                            cv2.putText(frame, f'Duracion: {int(muestra)}', (210, 450), cv2.FONT_HERSHEY_SIMPLEX, 1, (255, 0, 0), 2)
+                            #cv2.putText(frame, f'Micro Suenos: {int(conteo_sueños)}', (380, 60), cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 0, 255), 2)
+                            #cv2.putText(frame, f'Duracion: {int(muestra)}', (210, 450), cv2.FONT_HERSHEY_SIMPLEX, 1, (255, 0, 0), 2)
 
                             if longitud1 <= 10 and longitud2 <= 10 and not parpadeo:
                                 conteo = conteo + 1
